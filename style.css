@@ -1,0 +1,315 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    color: #212529; /* Dark text */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White content area */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff; /* Bright blue */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 12px 24px;
+    background-color: #ced4da; /* Light gray */
+    color: #212529;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover, .tab.active {
+    background-color: #007bff; /* Bright blue */
+    color: #ffffff; /* White text */
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 0 6px 6px 6px;
+    background-color: #f8f9fa; /* Very light gray */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Form Elements */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #343a40; /* Dark gray */
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px; /* Increased padding for better visibility */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff; /* White text */
+    background-color: #007bff; /* Bright blue */
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensures text is visible */
+    text-align: center;
+    min-width: 120px; /* Minimum width for readability */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red */
+}
+
+.btn-danger:hover {
+    background-color: #b02a37; /* Darker red */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Yellow */
+    color: #212529; /* Dark text for contrast */
+}
+
+.btn-warning:hover {
+    background-color: #d39e00; /* Darker yellow */
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Teal */
+}
+
+.btn-info:hover {
+    background-color: #117a8b; /* Darker teal */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed; /* Fixed layout for even columns */
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff; /* Bright blue */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f3f5; /* Very light gray */
+}
+
+.size-input {
+    width: 80px; /* Fixed width for perfect alignment */
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Specific Table Adjustments */
+table th:first-child, table td:first-child {
+    width: 20%; /* Wider first column for labels */
+}
+
+table th:not(:first-child), table td:not(:first-child) {
+    width: calc(80% / 7); /* Evenly distribute remaining width for 7 size columns */
+}
+
+/* Adjust wider tables like Transactions */
+#transactionsTable th, #transactionsTable td {
+    width: calc(100% / 13); /* 13 columns in Transactions */
+}
+
+#transactionsTable th:first-child, #transactionsTable td:first-child {
+    width: 15%;
+}
+
+#reportTable th, #reportTable td {
+    width: calc(100% / 11); /* 11 columns in Report */
+}
+
+#reportTable th:first-child, #reportTable td:first-child {
+    width: 20%;
+}
+
+.total-cell {
+    background-color: #28a745; /* Green */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.negative-cell {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+}
+
+/* Search and Date Filters */
+.search-container, .date-range-selector {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Statistics */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 16px;
+    color: #343a40;
+}
+
+.stat-value {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 12px 24px;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 600;
+    display: none;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: #28a745; /* Green */
+}
+
+.notification.error {
+    background-color: #dc3545; /* Red */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    color: #343a40;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #007bff; /* Bright blue */
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}

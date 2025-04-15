@@ -1,0 +1,83 @@
+[04-Apr-2025 11:52:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 11:52:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 11:52:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 11:52:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 11:52:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 11:52:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:17:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:17:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:24:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:170
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 170
+[04-Apr-2025 14:34:01 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\inventory\install.php:78
+Stack trace:
+#0 C:\xampp\htdocs\inventory\install.php(78): mysqli_stmt->bind_param('sssisis', NULL, NULL, NULL, 'Test collection', 10, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\inventory\install.php on line 78
+[04-Apr-2025 14:34:03 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\inventory\install.php:78
+Stack trace:
+#0 C:\xampp\htdocs\inventory\install.php(78): mysqli_stmt->bind_param('sssisis', NULL, NULL, NULL, 'Test collection', 10, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\inventory\install.php on line 78
+[04-Apr-2025 14:35:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:166
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 166
+[04-Apr-2025 14:35:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\inventory\api.php:166
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\inventory\api.php on line 166
+[04-Apr-2025 14:43:15 Europe/Berlin] PUT transaction_id=3: Starting update with data: {"type":"entry","collection_name":"spectra","date":"2025-04-04","quantities":{"S":0,"M":100,"L":2,"XL":2,"XXL":1,"XXXL":0,"Mix":0},"notes":"","timestamp":"2025-04-04T12:43:15.232Z"}
+[04-Apr-2025 14:43:15 Europe/Berlin] PUT transaction_id=3: Binding params - type=entry, issued_to=NULL
+[04-Apr-2025 14:43:15 Europe/Berlin] PUT transaction_id=3: Execute result - success=1, affected=1, error=none
+[04-Apr-2025 15:05:50 Europe/Berlin] PUT transaction_id=3: Starting update with data: {"type":"entry","collection_name":"spectra","date":"2025-04-01","quantities":{"S":0,"M":0,"L":2,"XL":2,"XXL":1,"XXXL":0,"Mix":0},"notes":"","timestamp":"2025-04-04T13:05:50.458Z"}
+[04-Apr-2025 15:05:50 Europe/Berlin] PUT transaction_id=3: Binding params - type=entry, issued_to=NULL
+[04-Apr-2025 15:05:50 Europe/Berlin] PUT transaction_id=3: Execute result - success=1, affected=1, error=none
+[04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Starting update with data: {"type":"entry","collection_name":"spectra","date":"2025-04-01","quantities":{"S":0,"M":1,"L":2,"XL":2,"XXL":1,"XXXL":0,"Mix":0},"notes":"","timestamp":"2025-04-04T13:05:58.111Z"}
+[04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Binding params - type=entry, issued_to=NULL
+[04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Execute result - success=1, affected=1, error=none
