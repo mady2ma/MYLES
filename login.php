@@ -1,6 +1,21 @@
 <?php
 require_once 'config.php';
 
+$conn = getDBConnection();
+$password = password_hash('password', PASSWORD_DEFAULT);
+// Check if user exists before attempting to insert.
+$stmt = $conn->prepare("SELECT id FROM users WHERE username = 'admin'");
+$stmt->execute();
+$result = $stmt->get_result();
+if ($result->num_rows === 0) {
+    $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES ('admin', ?)");
+    $stmt->bind_param("s", $password);
+    $stmt->execute();
+    $stmt->close();
+}
+
+$conn->close();
+
 if (isAuthenticated() && !isset($_GET['logout'])) {
     header('Location: index.php');
     exit;
@@ -24,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->close();
 
         if ($user && password_verify($password, $user['password'])) {
+            session_regenerate_id(true);
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             header('Location: index.php');
@@ -78,9 +94,9 @@ if (isset($_GET['logout'])) {
             <p class="error"><?php echo htmlspecialchars($error); ?></p>
         <?php endif; ?>
         <form method="POST">
-            <label>Username:   admin</label>
+            <label>Username:   </label>
             <input type="text" name="username" required>
-            <label>Password:   admin123</label>
+            <label>Password:   </label>
             <input type="password" name="password" required>
             <button type="submit">Login</button>
         </form>

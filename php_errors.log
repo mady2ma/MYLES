@@ -81,3 +81,8 @@ Stack trace:
 [04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Starting update with data: {"type":"entry","collection_name":"spectra","date":"2025-04-01","quantities":{"S":0,"M":1,"L":2,"XL":2,"XXL":1,"XXXL":0,"Mix":0},"notes":"","timestamp":"2025-04-04T13:05:58.111Z"}
 [04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Binding params - type=entry, issued_to=NULL
 [04-Apr-2025 15:05:58 Europe/Berlin] PUT transaction_id=3: Execute result - success=1, affected=1, error=none
+[02-Sep-2025 14:32:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function session_set_cookie_params() in /home/user/MYLES/config.php:13
+Stack trace:
+#0 /home/user/MYLES/index.php(2): require_once()
+#1 {main}
+  thrown in /home/user/MYLES/config.php on line 13

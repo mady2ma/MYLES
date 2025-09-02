@@ -44,29 +44,6 @@ switch ($action) {
         echo json_encode(['success' => true, 'sql' => $sql]);
         break;
 
-    case 'restore':
-        $data = json_decode(file_get_contents('php://input'), true);
-        if (!$data || !isset($data['sql'])) {
-            echo json_encode(['success' => false, 'error' => 'Invalid SQL data']);
-            exit;
-        }
-
-        $sql = $data['sql'];
-        $conn->query("SET FOREIGN_KEY_CHECKS = 0");
-        $queries = array_filter(explode(';', $sql));
-        foreach ($queries as $query) {
-            $query = trim($query);
-            if ($query && $conn->query($query) === false) {
-                error_log("Restore error: " . $conn->error);
-                echo json_encode(['success' => false, 'error' => $conn->error]);
-                $conn->query("SET FOREIGN_KEY_CHECKS = 1");
-                exit;
-            }
-        }
-        $conn->query("SET FOREIGN_KEY_CHECKS = 1");
-        echo json_encode(['success' => true]);
-        break;
-
     default:
         echo json_encode(['success' => false, 'error' => 'Invalid action']);
 }

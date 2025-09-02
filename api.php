@@ -81,7 +81,7 @@ switch ($method) {
                             $data[$size] = (int)$data[$size];
                         }
                     }
-                    ob_end潔lean();
+                    ob_end_clean();
                     echo json_encode(['success' => true, 'data' => $data]);
                 }
                 break;
